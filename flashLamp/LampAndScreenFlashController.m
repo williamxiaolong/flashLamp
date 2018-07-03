@@ -110,7 +110,7 @@
         self.musicPlayer = nil;
     }
     NSURL *fileURL =  [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:musicName ofType:@"mp3"]];
-    self.musicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:fileURL error:nil];
+    self.musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     
     self.musicPlayer.volume = 0.4;//设置音频音量
     [self.musicPlayer prepareToPlay];
